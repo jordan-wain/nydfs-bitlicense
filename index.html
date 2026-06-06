@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NYDFS BitLicense Register</title>
+<style>
+:root{--bg:#fff;--fg:#0a0a0a;--card:#fff;--card-fg:#0a0a0a;--muted:#f4f4f5;--muted-fg:#71717a;
+--primary:#2563eb;--primary-fg:#fff;--destructive:#ef4444;--success:#22c55e;--warning:#f59e0b;
+--info:#3b82f6;--border:#e4e4e7;--input:#e4e4e7;--ring:rgba(37,99,235,0.3);
+--chart-1:#ea580c;--chart-2:#0d9488;--chart-3:#164e63;--chart-4:#fbbf24;--chart-5:#f59e0b}
+@media(prefers-color-scheme:dark){:root{--bg:#09090b;--fg:#fafafa;--card:#0a0a0a;--card-fg:#fafafa;
+--muted:#27272a;--muted-fg:#a1a1aa;--primary:#3b82f6;--primary-fg:#fff;--destructive:#ef4444;
+--success:#22c55e;--warning:#f59e0b;--info:#3b82f6;--border:#27272a;--input:#27272a;
+--chart-1:#1d4ed8;--chart-2:#10b981;--chart-3:#f59e0b;--chart-4:#a855f7;--chart-5:#f43f5e}}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;line-height:1.6;
+background:var(--bg);color:var(--fg);min-height:100vh}
+a{color:var(--primary);text-decoration:none}a:hover{text-decoration:underline}
+code{font-family:ui-monospace,monospace;font-size:.875em;background:var(--muted);padding:.15em .4em;border-radius:.25rem}
+table{border-collapse:collapse;width:100%}
+.wrap{max-width:64rem;margin:0 auto;padding:2.5rem 1rem}.wrap>*+*{margin-top:1.5rem}
+.grid{display:grid;gap:.75rem}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:768px){.g3,.g2{grid-template-columns:1fr}}
+.card{background:var(--card);color:var(--card-fg);border-radius:.75rem;padding:1rem;
+box-shadow:0 0 0 1px color-mix(in srgb,var(--fg) 10%,transparent)}.card>*+*{margin-top:.75rem}
+.flex{display:flex}.flex-col{flex-direction:column}.items-center{align-items:center}
+.justify-between{justify-content:space-between}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}
+.flex-wrap{flex-wrap:wrap}.flex-1{flex:1}
+.text-xs{font-size:.75rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}
+.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem}
+.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}
+.tracking-tight{letter-spacing:-.025em}.uppercase{text-transform:uppercase}
+.text-center{text-align:center}.mt-1{margin-top:.25rem}
+.text-muted{color:var(--muted-fg)}.text-primary{color:var(--primary)}
+.text-destructive{color:var(--destructive)}.text-success{color:var(--success)}
+.bg-muted{background:var(--muted)}.border-b{border-bottom:1px solid var(--border)}
+.overflow-x{overflow-x:auto}
+.pill{display:inline-block;padding:2px 8px;border-radius:9999px;font-size:11px;font-weight:500}
+.pill-green{background:color-mix(in srgb,var(--success) 10%,transparent);color:var(--success);
+box-shadow:0 0 0 1px color-mix(in srgb,var(--success) 20%,transparent)}
+.pill-blue{background:color-mix(in srgb,var(--primary) 10%,transparent);color:var(--primary)}
+.pill-red{background:color-mix(in srgb,var(--destructive) 10%,transparent);color:var(--destructive)}
+.pill-warn{background:color-mix(in srgb,var(--warning) 10%,transparent);color:var(--warning)}
+.licence-badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500;white-space:nowrap}
+.entity-row:hover{background:var(--muted)}.sort-btn{cursor:pointer;user-select:none}
+.search-box{width:100%;padding:8px 12px;border-radius:6px;border:1px solid var(--input);
+background:var(--bg);color:var(--fg);font-size:14px}
+.search-box:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 2px var(--ring)}
+.show-more-btn{cursor:pointer;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:500;
+border:1px solid var(--border);background:var(--card);color:var(--fg);transition:.15s;width:100%}
+.show-more-btn:hover{background:var(--muted);border-color:var(--primary)}
+.recent-card{border-left:3px solid var(--primary);border-radius:.5rem;background:var(--bg);padding:.75rem}
+.recent-card>*+*{margin-top:.25rem}
+.coin-card{border-radius:.5rem;padding:.5rem .75rem;background:var(--bg);
+box-shadow:0 0 0 1px color-mix(in srgb,var(--fg) 10%,transparent);text-align:center}
+.section-toggle{cursor:pointer;user-select:none;display:flex;align-items:center;gap:8px}
+.section-toggle .chevron{transition:transform .2s;font-size:12px}
+.section-toggle.collapsed .chevron{transform:rotate(-90deg)}
+.collapsible{overflow:hidden;transition:max-height .3s}.collapsible.collapsed{max-height:0!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="flex justify-between" style="align-items:flex-start;flex-wrap:wrap;gap:1rem">
+    <div><h1 class="text-3xl font-bold tracking-tight">🗽 NYDFS BitLicense Register</h1>
+    <p class="text-muted mt-1">NY Virtual Currency Business Licences · 2026-06-06</p></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.25rem">
+      <span class="pill pill-green">Live Data</span>
+      <a href="https://www.dfs.ny.gov/virtual_currency_businesses" target="_blank" class="text-xs text-primary">Source: NYDFS →</a>
+    </div>
+  </div>
+
+  <div class="grid g3">
+    <div class="card flex-col"><span class="text-xs font-medium text-muted uppercase tracking-tight">Licensed Entities</span><span class="text-2xl font-bold mt-1">37</span><span class="text-xs text-muted">Active licences</span></div>
+    <div class="card flex-col"><span class="text-xs font-medium text-muted uppercase tracking-tight">Licence Breakdown</span><span class="text-2xl font-bold mt-1" style="font-size:1.1rem">14 dual · 12 trust · 11 VC</span><span class="text-xs text-muted">VC+MT / Trust Charter / VC Only</span></div>
+    <div class="card flex-col"><span class="text-xs font-medium text-muted uppercase tracking-tight">Greenlist Coins</span><span class="text-2xl font-bold mt-1">8</span><span class="text-xs text-muted">Pre-approved for listing</span></div>
+  </div>
+
+  <!-- Recent -->
+  <div class="card">
+    <div class="flex justify-between items-center"><h2 class="text-lg font-semibold">Recent Licences <span class="text-sm font-normal text-muted">last 12 months</span></h2><span class="pill pill-blue" id="rBadge"></span></div>
+    <div class="grid g2" id="rCards"></div>
+    <div id="rMore"></div>
+  </div>
+
+  <!-- Surrenders -->
+  <div class="card" id="surrenderCard" style="display:none">
+    <h2 class="text-lg font-semibold">Voluntary Surrenders</h2>
+    <div id="sCards" class="grid g2"></div>
+  </div>
+
+  <!-- Charts -->
+  <div class="grid g2">
+    <div class="card"><h2 class="text-sm font-semibold">Licence Types</h2><div style="max-width:280px;margin:0 auto"><canvas id="typeChart"></canvas></div></div>
+    <div class="card"><h2 class="text-sm font-semibold">Authorisation Timeline</h2><div style="height:280px"><canvas id="timeChart"></canvas></div></div>
+  </div>
+
+  <!-- Greenlist -->
+  <div class="card">
+    <h2 class="text-lg font-semibold">Greenlist Coins</h2>
+    <p class="text-sm text-muted">Pre-approved for listing by any BitLicensee without separate approval</p>
+    <div class="grid g3" style="grid-template-columns:repeat(4,1fr);gap:.5rem" id="coinCards"></div>
+  </div>
+
+  <!-- Full table -->
+  <h2 class="text-lg font-semibold">All Licensed Entities (37)</h2>
+  <div style="margin-bottom:.5rem"><input type="text" id="search" class="search-box" placeholder="Search by name or licence type…" oninput="filter()"></div>
+  <div class="text-sm text-muted" id="cnt"></div>
+  <div class="card" style="padding:0;overflow:hidden">
+    <div class="overflow-x">
+      <table class="text-sm"><thead><tr class="border-b bg-muted" style="text-align:left">
+        <th class="sort-btn" style="padding:.5rem .75rem" onclick="sort('i')">#</th>
+        <th class="sort-btn" style="padding:.5rem .75rem" onclick="sort('name')">Entity ⇅</th>
+        <th class="sort-btn" style="padding:.5rem .75rem" onclick="sort('licence_type')">Licence Type ⇅</th>
+        <th class="sort-btn" style="padding:.5rem .75rem" onclick="sort('date_granted')">Date Granted ⇅</th>
+      </tr></thead><tbody id="tbody"></tbody></table>
+    </div>
+    <div style="padding:.75rem" id="showMore"></div>
+  </div>
+
+  <!-- Pipeline -->
+  <div class="card">
+    <div class="section-toggle" onclick="toggleSection('pipeline')"><span class="chevron">▼</span><h2 class="text-lg font-semibold">How This Report Is Generated</h2></div>
+    <div class="collapsible collapsed" id="pipeline-section">
+      <div class="text-sm" style="padding:.5rem 1rem">
+        <p style="margin-bottom:.5rem"><strong>1.</strong> Scrape the NYDFS Virtual Currency Business page HTML</p>
+        <p style="margin-bottom:.5rem"><strong>2.</strong> Parse the Regulated Entities table (entity name, licence type, date granted)</p>
+        <p style="margin-bottom:.5rem"><strong>3.</strong> Extract Greenlist coins and Voluntary Surrender notices</p>
+        <p style="margin-bottom:.5rem"><strong>4.</strong> Diff against previous snapshot for new/removed entities</p>
+        <p style="margin-bottom:.5rem"><strong>5.</strong> Generate this HTML and push to GitHub Pages</p>
+        <div class="border-b" style="margin:.75rem 0"></div>
+        <p class="text-muted">Workflow: <code>nydfs-bitlicense-monitor</code> · Auto-published weekly</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xs text-muted text-center">Data: NYDFS · Workflow: <code>nydfs-bitlicense-monitor</code> · Updated 2026-06-06</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script>
+const E=[{"name": "GalaxyOne Prime NY LLC", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2026-05"}, {"name": "Mastercard Transaction Services (US) LLC", "licence_type": "Virtual Currency License", "date_granted": "2026-05"}, {"name": "Zap Solutions, Inc.", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2026-02"}, {"name": "MoonPay Trust Company, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2025-11"}, {"name": "Bullish US Operations LLC", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2025-09"}, {"name": "MoonPay USA LLC", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2025-06"}, {"name": "Bastion Platforms Trust Company, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2025-02"}, {"name": "Fireblocks Trust Company, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2024-08"}, {"name": "Cumberland New York LLC", "licence_type": "Virtual Currency License", "date_granted": "2024-06"}, {"name": "PayPal Digital, Inc.", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2024-05"}, {"name": "WisdomTree Digital Trust Company, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2024-03"}, {"name": "eToro NY LLC", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2023-02"}, {"name": "Coin Cafe, Inc.", "licence_type": "Virtual Currency License", "date_granted": "2023-01"}, {"name": "PayPal, Inc.", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2022-06*"}, {"name": "Provenance Technologies, Inc. d/b/a Fiant", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2022-02**"}, {"name": "BitOoda Digital, LLC", "licence_type": "Virtual Currency License", "date_granted": "2022-02"}, {"name": "Standard Custody & Trust Company, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2021-05"}, {"name": "Bakkt Financial Solutions I, LLC", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2021-03"}, {"name": "BitGo New York Trust Company, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2021-03"}, {"name": "GMO-Z.com Trust Company, Inc.", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2020-12"}, {"name": "ICE Digital Trust, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2019-08"}, {"name": "zerohash liquidity services llc (FKA Seed Digital Commodity Market, LLC)", "licence_type": "Virtual Currency License", "date_granted": "2019-07"}, {"name": "zerohash llc", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2019-07"}, {"name": "Bitstamp USA, Inc.", "licence_type": "Virtual Currency License", "date_granted": "2019-04"}, {"name": "Cottonwood Vending", "licence_type": "Virtual Currency License", "date_granted": "2019-01"}, {"name": "Moon Inc. d/b/a LibertyX", "licence_type": "Virtual Currency License", "date_granted": "2019-01"}, {"name": "Robinhood Crypto, LLC", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2019-01"}, {"name": "NYDIG Execution LLC", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2018-11"}, {"name": "NYDIG Trust Company LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2018-11"}, {"name": "Coinbase Custody Trust Company, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2018-10"}, {"name": "Bitpay, Inc.", "licence_type": "Virtual Currency License", "date_granted": "2018-07"}, {"name": "Block, Inc., f/k/a Square, Inc.", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2018-06"}, {"name": "bitFlyer USA, Inc.", "licence_type": "Virtual Currency License", "date_granted": "2017-11"}, {"name": "Coinbase, Inc.", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2017-01"}, {"name": "Ripple Markets DE LLC (f/k/a XRP II LLC)", "licence_type": "Virtual Currency License", "date_granted": "2016-06"}, {"name": "Gemini Trust Company, LLC", "licence_type": "Limited Purpose Trust Charter", "date_granted": "2015-10"}, {"name": "Circle Internet Financial, LLC", "licence_type": "Virtual Currency and Money Transmitter Licenses", "date_granted": "2015-09"}];
+const G=[{"coin": "Bitcoin", "symbol": "BTC"}, {"coin": "Ethereum", "symbol": "ETH"}, {"coin": "Gemini Dollar", "symbol": "GUSD"}, {"coin": "GMO JPY", "symbol": "GYEN"}, {"coin": "GMO USD", "symbol": "ZUSD"}, {"coin": "Ripple USD", "symbol": "RLUSD"}, {"coin": "WisdomTree Dollar", "symbol": "USDW"}, {"coin": "WisdomTree Gold", "symbol": "GOLD"}];
+const S=["Bakkt Crypto Solutions, LLC and Bakkt Marketplace, LLC", "Genesis", "Coinsource", "Cboe Clear Digital, LLC", "SoFi Digital Assets"];
+const LCLR={"Virtual Currency License":"pill-blue","Limited Purpose Trust Charter":"pill-warn",
+"Virtual Currency and Money Transmitter Licenses":"pill-green"};
+function lb(t){return`<span class="licence-badge ${LCLR[t]||'pill-blue'}">${t}</span>`}
+function toggleSection(id){const s=document.getElementById(id+'-section');s.classList.toggle('collapsed');
+s.closest('.card').querySelector('.section-toggle').classList.toggle('collapsed')}
+
+// Recent
+let rN=6;function renderR(){
+const cut=new Date();cut.setFullYear(cut.getFullYear()-1);
+const cs=`${cut.getFullYear()}-${String(cut.getMonth()+1).padStart(2,'0')}`;
+const r=E.filter(e=>e.date_granted>=cs).sort((a,b)=>b.date_granted.localeCompare(a.date_granted));
+document.getElementById('rBadge').textContent=r.length+' new';
+document.getElementById('rCards').innerHTML=r.slice(0,rN).map(e=>`<div class="recent-card">
+<div class="flex justify-between gap-2"><span class="font-medium">${e.name}</span>
+<span class="text-xs text-muted">${e.date_granted}</span></div>
+<div>${lb(e.licence_type)}</div></div>`).join('');
+const mc=document.getElementById('rMore');
+if(rN<r.length)mc.innerHTML=`<button class="show-more-btn" onclick="rN+=6;renderR()">Show more (${r.length-rN} remaining)</button>`;
+else mc.innerHTML=r.length>6?`<button class="show-more-btn" onclick="rN=6;renderR()">Collapse</button>`:''}
+
+// Surrenders
+if(S.length){document.getElementById('surrenderCard').style.display='';
+document.getElementById('sCards').innerHTML=S.map(s=>`<div class="recent-card" style="border-left-color:var(--destructive)">
+<span class="font-medium">${s}</span><span class="pill pill-red" style="margin-left:.5rem">Surrendered</span></div>`).join('')}
+
+// Greenlist
+document.getElementById('coinCards').innerHTML=G.map(g=>`<div class="coin-card">
+<div class="font-bold">${g.symbol}</div><div class="text-xs text-muted">${g.coin}</div></div>`).join('');
+
+// Table
+let sK='date_granted',sD=-1,flt=[],sN=15;
+function render(){const tb=document.getElementById('tbody'),v=flt.slice(0,sN);
+tb.innerHTML=v.map((e,i)=>`<tr class="entity-row border-b">
+<td style="padding:.5rem .75rem" class="text-muted">${i+1}</td>
+<td style="padding:.5rem .75rem">${e.name}</td>
+<td style="padding:.5rem .75rem">${lb(e.licence_type)}</td>
+<td style="padding:.5rem .75rem text-muted">${e.date_granted}</td></tr>`).join('');
+document.getElementById('cnt').textContent=`Showing ${Math.min(sN,flt.length)} of ${flt.length}`;
+const mc=document.getElementById('showMore');
+if(sN<flt.length){const r=flt.length-sN;mc.innerHTML=`<button class="show-more-btn" onclick="sN+=15;render()">Show ${Math.min(r,15)} more (${r} remaining)</button>`}
+else mc.innerHTML=flt.length>15?`<button class="show-more-btn" onclick="sN=15;render()">Collapse</button>`:''}
+function filter(){const q=document.getElementById('search').value.toLowerCase();
+flt=E.filter(e=>!q||e.name.toLowerCase().includes(q)||e.licence_type.toLowerCase().includes(q))
+.sort((a,b)=>{const av=a[sK]||'',bv=b[sK]||'';return av.localeCompare(bv)*sD});sN=15;render()}
+function sort(k){if(sK===k)sD*=-1;else{sK=k;sD=k==='date_granted'?-1:1}filter()}
+
+// Charts
+const cs2=getComputedStyle(document.documentElement);
+const c1=cs2.getPropertyValue('--chart-1').trim(),c2=cs2.getPropertyValue('--chart-2').trim(),
+c3=cs2.getPropertyValue('--chart-3').trim(),c4=cs2.getPropertyValue('--chart-4').trim(),
+c5=cs2.getPropertyValue('--chart-5').trim();
+const mfg=cs2.getPropertyValue('--muted-fg').trim()||'#71717a',brc=cs2.getPropertyValue('--border').trim()||'#e4e4e7';
+Chart.defaults.color=mfg;Chart.defaults.borderColor=brc;
+
+// Type doughnut
+const tc={};E.forEach(e=>tc[e.licence_type]=(tc[e.licence_type]||0)+1);
+new Chart(document.getElementById('typeChart'),{type:'doughnut',data:{
+labels:Object.keys(tc).map(k=>k.replace('Virtual Currency and Money Transmitter Licenses','VC + MT').replace('Virtual Currency License','BitLicense').replace('Limited Purpose Trust Charter','Trust Charter')),
+datasets:[{data:Object.values(tc),backgroundColor:[c1+'CC',c2+'CC',c3+'CC'],borderWidth:0}]},
+options:{cutout:'60%',plugins:{legend:{position:'bottom',labels:{boxWidth:12,padding:8,font:{size:11}}}}}});
+
+// Timeline
+const ym={};E.forEach(e=>{const y=e.date_granted.slice(0,4);ym[y]=(ym[y]||0)+1});
+const yrs=Object.keys(ym).sort();let cum=0;const cumD=yrs.map(y=>{cum+=ym[y];return cum});
+new Chart(document.getElementById('timeChart'),{type:'bar',data:{labels:yrs,datasets:[
+{type:'line',label:'Cumulative',data:cumD,borderColor:c1,backgroundColor:c1+'1A',fill:true,tension:.3,pointRadius:3,yAxisID:'y1',order:0},
+{label:'New',data:yrs.map(y=>ym[y]),backgroundColor:c2+'B3',borderColor:c2,borderWidth:1,borderRadius:4,yAxisID:'y',order:1}]},
+options:{maintainAspectRatio:false,responsive:true,plugins:{legend:{position:'bottom',labels:{boxWidth:12}}},
+scales:{y:{beginAtZero:true,grid:{color:brc+'40'}},y1:{beginAtZero:true,position:'right',grid:{drawOnChartArea:false}},x:{grid:{display:false}}}}});
+
+renderR();filter();
+</script>
+</body>
+</html>
